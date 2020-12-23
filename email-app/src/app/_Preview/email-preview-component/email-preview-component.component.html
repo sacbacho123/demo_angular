@@ -1,0 +1,15 @@
+<!-- <div>
+  <div *ngFor="let a of folder">
+    <button type="button" class="btn btn-info" [routerLink]="['/box', a]">
+      {{ a }}
+    </button>
+  </div>
+</div> -->
+
+<a href="#" [routerLink]="['/box']" *ngIf='mailFolder'> back </a>
+<div class="" *ngFor="let preview of datas">
+  <div *ngIf="preview.folder == mailFolder">
+    {{ preview.subject }}
+    <a href="#" [routerLink]="['/box', mailFolder, preview._id]">details</a>
+  </div>
+</div>

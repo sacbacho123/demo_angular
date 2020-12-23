@@ -1,0 +1,7 @@
+<div class="grid grid-pad pt-5">
+  <div *ngFor="let a of folder">
+    <button type="button" class="btn btn-info" [routerLink]="['/box', a]">
+      {{ a }}
+    </button>
+  </div>
+</div>
