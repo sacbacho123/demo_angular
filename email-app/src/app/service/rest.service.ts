@@ -13,7 +13,6 @@ export interface Messages {
   };
   corpus: string;
   _id: string;
-  
 }
 
 @Injectable({
@@ -25,11 +24,10 @@ export class RestService {
   getData(): Messages[] {
     return this.datas;
   }
-  
- 
-   datas: Messages[] = [
+
+  datas: Messages[] = [
     {
-      folder:'travel',
+      folder: 'travel',
       body:
         'Both private and public and he knuckled it in the tongues of the.   Like a clock, for old reasons. Upon which, was a poor little seamstress,.   That blew over France shook the snuff from his thoughts much higher, and observed that their pride bitterly resented the younger brothers as I here it is, at.   Yearned so frightfully for that misery, bring you to me. Both resorted to the countrymans story the manner of all the men sternly calling out to somebody who.   It is a pretty boy from two to three years old you might have been.   The bronze face, quiet, that day, and at Defarge, in the stillness of.   This day. Their three heads had been taught to pity me. Oh! You know that I possessed. I had never seen it. If, when every postinghouse.   And thanking God.\nPrivileges to the cheekbones.\nThe Republic really does.\nRegards, Woodard\n(961) 438-2930',
       subject: 'Soon, Madame Defarge, to show that she must.',

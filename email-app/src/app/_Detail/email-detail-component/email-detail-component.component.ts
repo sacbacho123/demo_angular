@@ -9,14 +9,14 @@ import { RestService, Messages } from 'src/app/service/rest.service';
 })
 export class EmailDetailComponentComponent implements OnInit {
 
-  constructor(private data: RestService, private route: ActivatedRoute) { }
+  constructor(private data: RestService, public route: ActivatedRoute) { }
 
   public mailDetail:any;
 
   datas:Messages[]=[]
   ngOnInit(): void {
     this.datas = this.data.getData();
-    let preFolder = this.route.snapshot.paramMap.get('id1');
+    let preFolder = this.route.snapshot.params['id'];
     this.mailDetail=preFolder;
   }
 

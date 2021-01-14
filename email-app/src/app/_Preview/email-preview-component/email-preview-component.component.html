@@ -6,9 +6,8 @@
   </div>
 </div> -->
 
-<a href="#" [routerLink]="['/box']" *ngIf='mailFolder'> back </a>
 <div class="" *ngFor="let preview of datas">
-  <div *ngIf="preview.folder == mailFolder">
+  <div *ngIf="preview.folder == mailFolder" >
     {{ preview.subject }}
     <a href="#" [routerLink]="['/box', mailFolder, preview._id]">details</a>
   </div>

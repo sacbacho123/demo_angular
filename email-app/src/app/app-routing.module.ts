@@ -6,7 +6,7 @@ import { EmailPreviewComponentComponent } from './_Preview/email-preview-compone
 
 const routes: Routes = [
   { path: 'box', component: EmailBoxComponentComponent },
-  { path: 'box/:id', component: EmailPreviewComponentComponent },
+  { path: 'box/:id', component: EmailPreviewComponentComponent},
   { path: 'box/:id/:id1', component: EmailDetailComponentComponent },
   
 ];

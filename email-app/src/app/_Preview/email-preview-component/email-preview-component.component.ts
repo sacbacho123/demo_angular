@@ -12,10 +12,12 @@ export class EmailPreviewComponentComponent implements OnInit {
   public mailFolder:any;
   datas:Messages[]=[]
   folder = ['inbox', 'finance', 'travel', 'personal', 'spam', 'drafts', 'sent'];
-
+  
   ngOnInit(): void {
     this.datas = this.data.getData();
     let preFolder = this.route.snapshot.paramMap.get('id');
     this.mailFolder=preFolder;
+    
+    
   }
 }
